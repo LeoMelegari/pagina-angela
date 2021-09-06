@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+
+* {
+    font-family: 'Poppins',sans-serif;
+}
+
+/* body {
+    background-color: #ff48001a;
+} */
+
+div.header {
+    max-width: 1300px;
+}
+
+div.slider-informativo {
+    max-width: 1300px;
+}
+
+div.contcard {
+    max-width: 1300px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+
+}
+
+.nav-link:hover {
+    color: #dc3545;
+}
+
+ul.nav {
+    font-weight: 500;
+}
+a.login {
+    background-color: #e35f46;
+    border: none;
+}
+
+/* Main */
+p.card-text a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+}
+p.card-text a:hover{
+    color: black;
+}
+
+/* MAIN - NOTICIAS - SLIDER */
+
+.img-fluid {
+    height: 100%;
+}
+
+
+/* min widht 1470px pra não ficar com seta bugada */
+@media (min-width: 1470px) {
+    button.slick-prev {
+        font-size: 0;
+        border: none;
+        width: 70px;
+        height: 70px;
+        z-index: 9; /* joga o objeto para frente das camadas */
+        background-color: transparent;
+        position: absolute;
+        background-image: url(../img/left.png);
+        top: 35%;
+        left: -80px;
+    }
+    button.slick-next {
+        font-size: 0;
+        border: none;
+        width: 70px;
+        height: 70px;
+        z-index: 9;
+        background-color: transparent;
+        position: absolute;
+        background-image: url(../img/right.png);
+        top: 35%;
+        right: -80px;
+    }
+}
+@media (max-width: 1469px) {
+    button.slick-arrow {
+        visibility: hidden;
+    }
+    .img-fluid {
+        height: auto;
+    }
+}
+
+ul.slick-dots {
+    list-style: none;
+}
+
+
+ul.slick-dots {
+    margin: 0 auto;
+    width: 54%;
+    float: right;
+}
+
+ul.slick-dots li button {
+    font-size: 0;
+    border: 1px rgba(128, 128, 128, 0.473) solid;
+    background: transparent;
+    border-radius: 20%;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+ul.slick-dots li {
+    display: inline-block;
+}
+
+ul.slick-dots li.slick-active button {
+    background-color: #e35f46;
+}
+
+
+
+
+
+/* Cards footer */
+.col .card {
+    background-color: #e3604642;
+}
+.card-footer {
+    border-top: none;
+    background-color: transparent;
+}
+
+.border-bottom {
+    border-bottom: 1px solid black!important;
+}
+
+div.card-info {
+    margin: 5px 0;
+}
+
+a.card1 {
+    background-color: #e35f46;
+    border: none;
+}
+a.card1:hover {
+    background-color: #dc3545;
+}
+
+
+@media (max-width:991px) {
+    div.contcard {
+        position: relative;
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    div.card-info {
+        margin-bottom: 0;
+    }
+}
+
+
+/* PAGINA DE LOGIN */
+
+div.login-card{
+    background-color: rgba(211, 211, 211, 0.349);
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style-form.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid header">
+        <header
+            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="./index.html" class="nav-link px-2 link-dark">Início</a></li>
+                <li><a href="./form.html" class="nav-link px-2 link-secondary">Pré-consulta</a></li>
+            </ul>
+
+            <div class="col-md-3 text-end">
+                <a href="./login.html" class="btn btn-danger login me-2">Login</a>
+            </div>
+        </header>
+    </div>
+    <div class="container form">
+        <div class="title">Cadastro pré-consulta</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome Completo</span>
+                    <input type="text" placeholder="Coloque seu nome" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Data de nascimento</span>
+                    <input type="date" placeholder="Digite a data de nascimento" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Telefone</span>
+                    <input type="text" placeholder="Telefone ou celular" >
+                </div>
+                <div class="input-box">
+                    <span class="details">CEP</span>
+                    <input type="text" id="cep" placeholder="Digite o CEP" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Rua</span>
+                    <input type="text" id="logradouro" placeholder="Digite a rua" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Nº</span>
+                    <input type="text" id="numero" placeholder="Digite o número" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Complemento</span>
+                    <input type="text" placeholder="Ex: casa, apartamento">
+                </div>
+                <div class="input-box">
+                    <span class="details">Bairro</span>
+                    <input type="text" id="bairro" placeholder="Digite o bairro" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Cidade</span>
+                    <input type="text" id="cidade" placeholder="Digite a cidade" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Estado</span>
+                    <select class="form-control" id="uf">
+                        <option selected="#">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Gênero</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="genero">Masculino</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="genero">Feminino</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="genero">Outro</span>
+                    </label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Registrar">
+            </div>
+        </form>
+    </div>
+
+    <script src="./script-form.js"></script>
+</body>
+</html>
