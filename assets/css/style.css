@@ -140,6 +140,14 @@ ul.slick-dots li.slick-active button {
 
 div.card-info {
     margin: 5px 0;
+    position: relative;
+    bottom: -140px;
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 940px) {
+    
+    
 }
 
 a.card1 {
@@ -160,6 +168,13 @@ a.card1:hover {
 @media (min-width: 992px) {
     div.card-info {
         margin-bottom: 0;
+    }
+    div.card-info:hover {
+        bottom: 0;
+        transition: all 0.5s ease;
+    }
+    body {
+        overflow: hidden;
     }
 }
 
